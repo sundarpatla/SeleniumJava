@@ -25,7 +25,7 @@ class SeleniumLocators {
 	@Test
 	void idnameclassname() throws Exception {
 		
-		driver.get("https://www.techlearn.in/wp-admin");
+		driver.get("https://www.techlearn.in/wp-login.php");
 		
 		Thread.sleep(2000);
 		
