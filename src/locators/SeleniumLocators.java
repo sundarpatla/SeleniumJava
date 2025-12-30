@@ -44,7 +44,7 @@ class SeleniumLocators {
 	@Test
 	void cssselectedlocator() throws Exception {
 		
-		driver.get("https://www.techlearn.in/admin");
+		driver.get("https://www.techlearn.in/wp-login.php");
 		
 		Thread.sleep(2000);
 		
