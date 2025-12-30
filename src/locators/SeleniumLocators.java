@@ -1,7 +1,5 @@
 package locators;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -9,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 class SeleniumLocators {
 	
@@ -18,16 +16,16 @@ class SeleniumLocators {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		
-		driver = new EdgeDriver();
+		driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
-		;
+		
 	}
 
 	@Test
 	void idnameclassname() throws Exception {
 		
-		driver.get("https://www.techlearn.in/admin");
+		driver.get("https://www.techlearn.in/wp-admin");
 		
 		Thread.sleep(2000);
 		
