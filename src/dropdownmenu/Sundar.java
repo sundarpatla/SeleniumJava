@@ -6,17 +6,19 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeTest;
 
 public class Sundar {
-	
 	WebDriver driver;
   @Test
-  public void google() {
-	  driver.get("https://www.google.com");
+  public void gmail() {
+	  driver.get("https://www.gmail.com");
   }
   @BeforeTest
   public void beforeTest() {
-	  driver = new EdgeDriver();
-	  
+	  driver = new ChromeDriver();  
 	  driver.manage().window().maximize();
+  }
+	 @AfterTest
+  public void afterTest() {
+	  driver.quit();
   }
 
 }
